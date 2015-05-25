@@ -55,6 +55,9 @@ OBJECTS := \
   $(OBJDIR)/AccessClass_de9602d5.o \
   $(OBJDIR)/PracticalSocket_2574ecc8.o \
   $(OBJDIR)/AudioComponent_521bd9c9.o \
+  $(OBJDIR)/ZMQServer_91ca0f78.o \
+  $(OBJDIR)/ZMQOutput_b2b1ea36.o \
+  $(OBJDIR)/ZMQOutputEditor_bc00483.o \
   $(OBJDIR)/Rectifier_21cc94b6.o \
   $(OBJDIR)/ArduinoOutput_d5a968de.o \
   $(OBJDIR)/ArduinoOutputEditor_e1b7e52b.o \
@@ -225,6 +228,21 @@ $(OBJDIR)/PracticalSocket_2574ecc8.o: ../../Source/Network/PracticalSocket.cpp
 $(OBJDIR)/AudioComponent_521bd9c9.o: ../../Source/Audio/AudioComponent.cpp
 	-@mkdir -p $(OBJDIR)
 	@echo "Compiling AudioComponent.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
+
+$(OBJDIR)/ZMQServer_91ca0f78.o: ../../Source/Processors/NetworkDataSink/ZMQServer.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling ZMQServer.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
+
+$(OBJDIR)/ZMQOutput_b2b1ea36.o: ../../Source/Processors/NetworkDataSink/ZMQOutput.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling ZMQOutput.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
+
+$(OBJDIR)/ZMQOutputEditor_bc00483.o: ../../Source/Processors/NetworkDataSink/ZMQOutputEditor.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling ZMQOutputEditor.cpp"
 	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
 $(OBJDIR)/Rectifier_21cc94b6.o: ../../Source/Processors/Rectifier/Rectifier.cpp

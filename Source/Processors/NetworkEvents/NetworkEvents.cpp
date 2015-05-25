@@ -155,7 +155,7 @@ NetworkEvents::NetworkEvents()
     createZmqContext();
     firstTime = true;
     responder = nullptr;
-    urlport = 5556;
+    urlport = 5554;
     threadRunning = false;
     opensocket();
 

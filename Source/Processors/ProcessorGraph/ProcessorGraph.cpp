@@ -54,6 +54,8 @@
 #include "../PSTH/PeriStimulusTimeHistogramNode.h"
 #include "../CAR/CAR.h"
 #include "../Rectifier/Rectifier.h"
+//#include "../NetworkSink/NetworkSink.h"
+#include "../NetworkDataSink/ZMQOutput.h"
 
     
 ProcessorGraph::ProcessorGraph() : currentNodeId(100)
@@ -672,7 +674,16 @@ GenericProcessor* ProcessorGraph::createProcessorFromDescription(String& descrip
 			std::cout << "Creating a PSTH output node." << std::endl;
 			processor = new PeriStimulusTimeHistogramNode();
 		}
-
+		else if (subProcessorType.equalsIgnoreCase("Network Sink"))
+		{
+			std::cout << "Creating a ZMQ sink node." << std::endl;
+			//processor = new NetworkSinkNode();
+		}
+		else if (subProcessorType.equalsIgnoreCase("Network Data Sink"))
+		{
+			std::cout << "Creating a ZMQ Data sink node." << std::endl;
+			processor = new ZMQOutput();
+		}
 		CoreServices::sendStatusMessage("New sink created.");
     }
 

@@ -51,7 +51,8 @@
   @see GenericProcessor
 
 */
-
+# ifndef STRINGTS_H_INCLUDED
+# define STRINGTS_H_INCLUDED
 class StringTS
 {
 public:
@@ -70,6 +71,7 @@ public:
     int len;
     juce::int64 timestamp;
 };
+#endif
 
 class NetworkEvents : public GenericProcessor,  public Thread
 {

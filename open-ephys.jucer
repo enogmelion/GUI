@@ -292,6 +292,16 @@
               file="Source/Audio/AudioComponent.h"/>
       </GROUP>
       <GROUP id="yQmqZWk" name="Processors">
+        <GROUP id="{DA378349-D12C-5AA8-E5AD-CAEDA41011C5}" name="NetworkDataSink">
+          <FILE id="uuZRjV" name="ZMQServer.cpp" compile="1" resource="0" file="Source/Processors/NetworkDataSink/ZMQServer.cpp"/>
+          <FILE id="D3y62d" name="ZMQServer.h" compile="0" resource="0" file="Source/Processors/NetworkDataSink/ZMQServer.h"/>
+          <FILE id="ewXNNP" name="ZMQOutput.cpp" compile="1" resource="0" file="Source/Processors/NetworkDataSink/ZMQOutput.cpp"/>
+          <FILE id="ulY2WP" name="ZMQOutput.h" compile="0" resource="0" file="Source/Processors/NetworkDataSink/ZMQOutput.h"/>
+          <FILE id="gQEPNp" name="ZMQOutputEditor.cpp" compile="1" resource="0"
+                file="Source/Processors/NetworkDataSink/ZMQOutputEditor.cpp"/>
+          <FILE id="ecNQOl" name="ZMQOutputEditor.h" compile="0" resource="0"
+                file="Source/Processors/NetworkDataSink/ZMQOutputEditor.h"/>
+        </GROUP>
         <GROUP id="{6E059BEC-4A8F-BCDA-1F91-9B22C6CBF2E4}" name="Rectifier">
           <FILE id="oMFsRh" name="Rectifier.cpp" compile="1" resource="0" file="Source/Processors/Rectifier/Rectifier.cpp"/>
           <FILE id="NdIO5Q" name="Rectifier.h" compile="0" resource="0" file="Source/Processors/Rectifier/Rectifier.h"/>
