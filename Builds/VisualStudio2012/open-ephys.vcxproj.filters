@@ -457,6 +457,9 @@
     <ClCompile Include="..\..\Source\Audio\AudioComponent.cpp">
       <Filter>open-ephys\Source\Audio</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Processors\NetworkDataSink\dataPacket.pb.cc">
+      <Filter>open-ephys\Source\Processors\NetworkDataSink</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Processors\NetworkDataSink\ZMQServer.cpp">
       <Filter>open-ephys\Source\Processors\NetworkDataSink</Filter>
     </ClCompile>
@@ -2063,6 +2066,9 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\Audio\AudioComponent.h">
       <Filter>open-ephys\Source\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Processors\NetworkDataSink\dataPacket.pb.h">
+      <Filter>open-ephys\Source\Processors\NetworkDataSink</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Processors\NetworkDataSink\ZMQServer.h">
       <Filter>open-ephys\Source\Processors\NetworkDataSink</Filter>

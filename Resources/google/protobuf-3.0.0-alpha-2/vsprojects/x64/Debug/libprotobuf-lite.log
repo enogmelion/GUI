@@ -1,0 +1,44 @@
+﻿Build started 5/26/2015 6:14:33 PM.
+     1>Project "C:\Users\labadmin\Downloads\protobuf-3.0.0-alpha-2\vsprojects\libprotobuf-lite.vcxproj" on node 4 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (libprotobuf.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I../src /I. /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBPROTOBUF_EXPORTS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt /wd4244 /wd4267 /wd4018 /wd4355 /wd4800 /wd4251 /wd4996 /wd4146 /wd4305 ..\src\google\protobuf\arena.cc ..\src\google\protobuf\arenastring.cc ..\src\google\protobuf\extension_set.cc ..\src\google\protobuf\generated_message_util.cc ..\src\google\protobuf\io\coded_stream.cc ..\src\google\protobuf\io\zero_copy_stream.cc ..\src\google\protobuf\io\zero_copy_stream_impl_lite.cc ..\src\google\protobuf\message_lite.cc ..\src\google\protobuf\repeated_field.cc ..\src\google\protobuf\stubs\atomicops_internals_x86_gcc.cc ..\src\google\protobuf\stubs\atomicops_internals_x86_msvc.cc ..\src\google\protobuf\stubs\common.cc ..\src\google\protobuf\stubs\once.cc ..\src\google\protobuf\stubs\stringprintf.cc ..\src\google\protobuf\wire_format_lite.cc
+         arena.cc
+         arenastring.cc
+         extension_set.cc
+         generated_message_util.cc
+         coded_stream.cc
+         zero_copy_stream.cc
+         zero_copy_stream_impl_lite.cc
+         message_lite.cc
+         repeated_field.cc
+         atomicops_internals_x86_gcc.cc
+         atomicops_internals_x86_msvc.cc
+         common.cc
+         once.cc
+         stringprintf.cc
+         wire_format_lite.cc
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\Users\labadmin\Downloads\protobuf-3.0.0-alpha-2\vsprojects\x64\Debug\libprotobuf-lite.lib" /NOLOGO /MACHINE:X64 x64\Debug\arena.obj
+         x64\Debug\arenastring.obj
+         x64\Debug\extension_set.obj
+         x64\Debug\generated_message_util.obj
+         x64\Debug\coded_stream.obj
+         x64\Debug\zero_copy_stream.obj
+         x64\Debug\zero_copy_stream_impl_lite.obj
+         x64\Debug\message_lite.obj
+         x64\Debug\repeated_field.obj
+         x64\Debug\atomicops_internals_x86_gcc.obj
+         x64\Debug\atomicops_internals_x86_msvc.obj
+         x64\Debug\common.obj
+         x64\Debug\once.obj
+         x64\Debug\stringprintf.obj
+         x64\Debug\wire_format_lite.obj
+     1>atomicops_internals_x86_gcc.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+         libprotobuf-lite.vcxproj -> C:\Users\labadmin\Downloads\protobuf-3.0.0-alpha-2\vsprojects\x64\Debug\libprotobuf-lite.lib
+     1>Done Building Project "C:\Users\labadmin\Downloads\protobuf-3.0.0-alpha-2\vsprojects\libprotobuf-lite.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.27

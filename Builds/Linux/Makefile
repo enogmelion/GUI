@@ -55,6 +55,7 @@ OBJECTS := \
   $(OBJDIR)/AccessClass_de9602d5.o \
   $(OBJDIR)/PracticalSocket_2574ecc8.o \
   $(OBJDIR)/AudioComponent_521bd9c9.o \
+  $(OBJDIR)/dataPacket.pb_13c5359e.o \
   $(OBJDIR)/ZMQServer_91ca0f78.o \
   $(OBJDIR)/ZMQOutput_b2b1ea36.o \
   $(OBJDIR)/ZMQOutputEditor_bc00483.o \
@@ -228,6 +229,11 @@ $(OBJDIR)/PracticalSocket_2574ecc8.o: ../../Source/Network/PracticalSocket.cpp
 $(OBJDIR)/AudioComponent_521bd9c9.o: ../../Source/Audio/AudioComponent.cpp
 	-@mkdir -p $(OBJDIR)
 	@echo "Compiling AudioComponent.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
+
+$(OBJDIR)/dataPacket.pb_13c5359e.o: ../../Source/Processors/NetworkDataSink/dataPacket.pb.cc
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling dataPacket.pb.cc"
 	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
 $(OBJDIR)/ZMQServer_91ca0f78.o: ../../Source/Processors/NetworkDataSink/ZMQServer.cpp

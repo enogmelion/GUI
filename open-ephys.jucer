@@ -293,6 +293,9 @@
       </GROUP>
       <GROUP id="yQmqZWk" name="Processors">
         <GROUP id="{DA378349-D12C-5AA8-E5AD-CAEDA41011C5}" name="NetworkDataSink">
+          <FILE id="JpQyxS" name="dataPacket.pb.cc" compile="1" resource="0"
+                file="Source/Processors/NetworkDataSink/dataPacket.pb.cc"/>
+          <FILE id="YIfhYu" name="dataPacket.pb.h" compile="0" resource="0" file="Source/Processors/NetworkDataSink/dataPacket.pb.h"/>
           <FILE id="uuZRjV" name="ZMQServer.cpp" compile="1" resource="0" file="Source/Processors/NetworkDataSink/ZMQServer.cpp"/>
           <FILE id="D3y62d" name="ZMQServer.h" compile="0" resource="0" file="Source/Processors/NetworkDataSink/ZMQServer.h"/>
           <FILE id="ewXNNP" name="ZMQOutput.cpp" compile="1" resource="0" file="Source/Processors/NetworkDataSink/ZMQOutput.cpp"/>

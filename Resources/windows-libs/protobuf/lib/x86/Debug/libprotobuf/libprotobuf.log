@@ -1,0 +1,98 @@
+﻿Build started 5/26/2015 5:17:58 PM.
+     1>Project "C:\Users\labadmin\Downloads\protobuf-3.0.0-alpha-2\vsprojects\libprotobuf.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../src /I. /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBPROTOBUF_EXPORTS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\libprotobuf\\" /Fd"Debug\libprotobuf\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt /wd4244 /wd4267 /wd4018 /wd4355 /wd4800 /wd4251 /wd4996 /wd4146 /wd4305 ..\src\google\protobuf\arena.cc ..\src\google\protobuf\arenastring.cc ..\src\google\protobuf\compiler\importer.cc ..\src\google\protobuf\compiler\parser.cc ..\src\google\protobuf\descriptor.cc ..\src\google\protobuf\descriptor.pb.cc ..\src\google\protobuf\descriptor_database.cc ..\src\google\protobuf\dynamic_message.cc ..\src\google\protobuf\extension_set.cc ..\src\google\protobuf\extension_set_heavy.cc ..\src\google\protobuf\generated_message_reflection.cc ..\src\google\protobuf\generated_message_util.cc ..\src\google\protobuf\io\coded_stream.cc ..\src\google\protobuf\io\gzip_stream.cc ..\src\google\protobuf\io\printer.cc ..\src\google\protobuf\io\strtod.cc ..\src\google\protobuf\io\tokenizer.cc ..\src\google\protobuf\io\zero_copy_stream.cc ..\src\google\protobuf\io\zero_copy_stream_impl.cc ..\src\google\protobuf\io\zero_copy_stream_impl_lite.cc ..\src\google\protobuf\map_field.cc ..\src\google\protobuf\message.cc ..\src\google\protobuf\message_lite.cc ..\src\google\protobuf\reflection_ops.cc ..\src\google\protobuf\repeated_field.cc ..\src\google\protobuf\service.cc ..\src\google\protobuf\stubs\atomicops_internals_x86_gcc.cc ..\src\google\protobuf\stubs\atomicops_internals_x86_msvc.cc ..\src\google\protobuf\stubs\common.cc ..\src\google\protobuf\stubs\once.cc ..\src\google\protobuf\stubs\stringprintf.cc ..\src\google\protobuf\stubs\structurally_valid.cc ..\src\google\protobuf\stubs\strutil.cc ..\src\google\protobuf\stubs\substitute.cc ..\src\google\protobuf\text_format.cc ..\src\google\protobuf\unknown_field_set.cc ..\src\google\protobuf\wire_format.cc ..\src\google\protobuf\wire_format_lite.cc
+     1>cl : Command line warning D9030: '/Gm' is incompatible with multiprocessing; ignoring /MP switch
+         wire_format_lite.cc
+         wire_format.cc
+         unknown_field_set.cc
+         text_format.cc
+         substitute.cc
+         strutil.cc
+         structurally_valid.cc
+         stringprintf.cc
+         once.cc
+         common.cc
+         atomicops_internals_x86_msvc.cc
+         atomicops_internals_x86_gcc.cc
+         service.cc
+         repeated_field.cc
+         reflection_ops.cc
+         message_lite.cc
+         message.cc
+         map_field.cc
+         zero_copy_stream_impl_lite.cc
+         zero_copy_stream_impl.cc
+         Generating Code...
+         Compiling...
+         zero_copy_stream.cc
+         tokenizer.cc
+         strtod.cc
+         printer.cc
+         gzip_stream.cc
+         coded_stream.cc
+         generated_message_util.cc
+         generated_message_reflection.cc
+     1>c:\users\labadmin\downloads\protobuf-3.0.0-alpha-2\src\google\protobuf\generated_message_reflection.cc(1882): warning C4065: switch statement contains 'default' but no 'case' labels
+     1>c:\program files (x86)\microsoft visual studio 12.0\vc\include\xtree(893): warning C4506: no definition for inline function 'google::protobuf::Message *google::protobuf::internal::GenericTypeHandler<google::protobuf::Message>::NewFromPrototype(const GenericType *,google::protobuf::Arena *)'
+                 with
+                 [
+                     GenericType=google::protobuf::Message
+                 ]
+         extension_set_heavy.cc
+         extension_set.cc
+         dynamic_message.cc
+         descriptor_database.cc
+         descriptor.pb.cc
+         descriptor.cc
+         parser.cc
+         importer.cc
+         arenastring.cc
+         arena.cc
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"Debug\libprotobuf.lib" /NOLOGO Debug\libprotobuf\arena.obj
+         Debug\libprotobuf\arenastring.obj
+         Debug\libprotobuf\importer.obj
+         Debug\libprotobuf\parser.obj
+         Debug\libprotobuf\descriptor.obj
+         Debug\libprotobuf\descriptor.pb.obj
+         Debug\libprotobuf\descriptor_database.obj
+         Debug\libprotobuf\dynamic_message.obj
+         Debug\libprotobuf\extension_set.obj
+         Debug\libprotobuf\extension_set_heavy.obj
+         Debug\libprotobuf\generated_message_reflection.obj
+         Debug\libprotobuf\generated_message_util.obj
+         Debug\libprotobuf\coded_stream.obj
+         Debug\libprotobuf\gzip_stream.obj
+         Debug\libprotobuf\printer.obj
+         Debug\libprotobuf\strtod.obj
+         Debug\libprotobuf\tokenizer.obj
+         Debug\libprotobuf\zero_copy_stream.obj
+         Debug\libprotobuf\zero_copy_stream_impl.obj
+         Debug\libprotobuf\zero_copy_stream_impl_lite.obj
+         Debug\libprotobuf\map_field.obj
+         Debug\libprotobuf\message.obj
+         Debug\libprotobuf\message_lite.obj
+         Debug\libprotobuf\reflection_ops.obj
+         Debug\libprotobuf\repeated_field.obj
+         Debug\libprotobuf\service.obj
+         Debug\libprotobuf\atomicops_internals_x86_gcc.obj
+         Debug\libprotobuf\atomicops_internals_x86_msvc.obj
+         Debug\libprotobuf\common.obj
+         Debug\libprotobuf\once.obj
+         Debug\libprotobuf\stringprintf.obj
+         Debug\libprotobuf\structurally_valid.obj
+         Debug\libprotobuf\strutil.obj
+         Debug\libprotobuf\substitute.obj
+         Debug\libprotobuf\text_format.obj
+         Debug\libprotobuf\unknown_field_set.obj
+         Debug\libprotobuf\wire_format.obj
+         Debug\libprotobuf\wire_format_lite.obj
+     1>atomicops_internals_x86_gcc.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+         libprotobuf.vcxproj -> C:\Users\labadmin\Downloads\protobuf-3.0.0-alpha-2\vsprojects\Debug\libprotobuf.lib
+     1>Done Building Project "C:\Users\labadmin\Downloads\protobuf-3.0.0-alpha-2\vsprojects\libprotobuf.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:28.55

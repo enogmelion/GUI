@@ -92,7 +92,7 @@ ZMQOutputEditor::ZMQOutputEditor(GenericProcessor* parentNode, bool useDefaultPa
 	//Set any parameters
 	
 	//Tell the processor to switch the server on
-	//activeButton->setToggleState(true, sendNotification);
+	activeButton->setToggleState(true, sendNotification);
 }
 
 ZMQOutputEditor::~ZMQOutputEditor()
@@ -160,7 +160,6 @@ void ZMQOutputEditor::buttonEvent(Button* button)
 			activeButton->setLabel("OFF");
 		}
 	}
-
 
 }
 

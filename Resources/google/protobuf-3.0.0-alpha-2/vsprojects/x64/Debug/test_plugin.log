@@ -1,0 +1,17 @@
+﻿Build started 5/26/2015 6:14:36 PM.
+     1>Project "C:\Users\labadmin\Downloads\protobuf-3.0.0-alpha-2\vsprojects\test_plugin.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (libprotobuf-lite.vcxproj, libprotobuf.vcxproj, libprotoc.vcxproj, protoc.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I../src /I. /I../gtest/include /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _VARIADIC_MAX=10 /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt /wd4244 /wd4267 /wd4018 /wd4355 /wd4800 /wd4251 /wd4996 /wd4146 /wd4305 ..\src\google\protobuf\compiler\mock_code_generator.cc ..\src\google\protobuf\compiler\test_plugin.cc ..\src\google\protobuf\testing\file.cc
+         mock_code_generator.cc
+     1>..\src\google\protobuf\compiler\mock_code_generator.cc : fatal error C1041: cannot open program database 'c:\users\labadmin\downloads\protobuf-3.0.0-alpha-2\vsprojects\x64\debug\vc120.pdb'; if multiple CL.EXE write to the same .PDB file, please use /FS
+         test_plugin.cc
+     1>..\src\google\protobuf\compiler\test_plugin.cc : fatal error C1041: cannot open program database 'c:\users\labadmin\downloads\protobuf-3.0.0-alpha-2\vsprojects\x64\debug\vc120.pdb'; if multiple CL.EXE write to the same .PDB file, please use /FS
+         file.cc
+     1>..\src\google\protobuf\testing\file.cc : fatal error C1041: cannot open program database 'c:\users\labadmin\downloads\protobuf-3.0.0-alpha-2\vsprojects\x64\debug\vc120.pdb'; if multiple CL.EXE write to the same .PDB file, please use /FS
+         Generating Code...
+     1>Done Building Project "C:\Users\labadmin\Downloads\protobuf-3.0.0-alpha-2\vsprojects\test_plugin.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.13

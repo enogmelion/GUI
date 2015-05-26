@@ -10,12 +10,13 @@
 
 #include "ZMQServer.h"
 #include "../NetworkEvents/NetworkEvents.h"
-
+using namespace std;
 void* ZMQServer::zmqContext = nullptr;
 
 ZMQServer::ZMQServer()
 	: Thread("ZMQ Server")
 {
+	GOOGLE_PROTOBUF_VERIFY_VERSION;
 	createZmqContext();
 	firstTime = true;
 	responder = nullptr;
@@ -188,6 +189,7 @@ void ZMQServer::run()
 
 	//zmqContext = zmq_ctx_new();
 	responder = zmq_socket(zmqContext, ZMQ_REP);
+	tutorial::AddressBook address_book;
 
 	String url = String("tcp://*:") + String(urlport);
 	int rc = zmq_bind(responder, url.toRawUTF8());
@@ -210,7 +212,14 @@ void ZMQServer::run()
 		if (request_result > 0)
 		{
 			std::cout << "Received message!" << std::endl;
-			zmq_send(responder, "World", 5, 0);
+			address_book.Clear();
+			tutorial::Person* person = address_book.add_person();
+			person->set_id(4);
+			string name = "tu vieja";
+			person->set_name(name);
+			string serialized;
+			address_book.SerializeToString(&serialized);
+			zmq_send(responder, serialized.c_str(), serialized.size()+1, 0);
 		}
 		else if (request_result == 0) //Zero Message
 		{

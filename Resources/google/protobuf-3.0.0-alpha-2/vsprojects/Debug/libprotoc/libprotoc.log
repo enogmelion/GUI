@@ -1,0 +1,44 @@
+﻿Build started 5/26/2015 6:11:44 PM.
+     1>Project "C:\Users\labadmin\Downloads\protobuf-3.0.0-alpha-2\vsprojects\libprotoc.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../src /I. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBPROTOC_EXPORTS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\libprotoc\\" /Fd"Debug\libprotoc\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt /wd4244 /wd4267 /wd4018 /wd4355 /wd4800 /wd4251 /wd4996 /wd4146 /wd4305 ..\src\google\protobuf\compiler\code_generator.cc ..\src\google\protobuf\compiler\command_line_interface.cc ..\src\google\protobuf\compiler\cpp\cpp_enum.cc ..\src\google\protobuf\compiler\cpp\cpp_enum_field.cc ..\src\google\protobuf\compiler\cpp\cpp_extension.cc ..\src\google\protobuf\compiler\cpp\cpp_field.cc ..\src\google\protobuf\compiler\cpp\cpp_file.cc ..\src\google\protobuf\compiler\cpp\cpp_generator.cc ..\src\google\protobuf\compiler\cpp\cpp_helpers.cc ..\src\google\protobuf\compiler\cpp\cpp_map_field.cc ..\src\google\protobuf\compiler\cpp\cpp_message.cc ..\src\google\protobuf\compiler\cpp\cpp_message_field.cc ..\src\google\protobuf\compiler\cpp\cpp_primitive_field.cc ..\src\google\protobuf\compiler\cpp\cpp_service.cc ..\src\google\protobuf\compiler\cpp\cpp_string_field.cc ..\src\google\protobuf\compiler\javanano\javanano_enum.cc ..\src\google\protobuf\compiler\javanano\javanano_enum_field.cc ..\src\google\protobuf\compiler\javanano\javanano_extension.cc ..\src\google\protobuf\compiler\javanano\javanano_field.cc ..\src\google\protobuf\compiler\javanano\javanano_file.cc ..\src\google\protobuf\compiler\javanano\javanano_generator.cc ..\src\google\protobuf\compiler\javanano\javanano_helpers.cc ..\src\google\protobuf\compiler\javanano\javanano_map_field.cc ..\src\google\protobuf\compiler\javanano\javanano_message.cc ..\src\google\protobuf\compiler\javanano\javanano_message_field.cc ..\src\google\protobuf\compiler\javanano\javanano_primitive_field.cc ..\src\google\protobuf\compiler\java\java_context.cc ..\src\google\protobuf\compiler\java\java_doc_comment.cc ..\src\google\protobuf\compiler\java\java_enum.cc ..\src\google\protobuf\compiler\java\java_enum_field.cc ..\src\google\protobuf\compiler\java\java_extension.cc ..\src\google\protobuf\compiler\java\java_field.cc ..\src\google\protobuf\compiler\java\java_file.cc ..\src\google\protobuf\compiler\java\java_generator.cc ..\src\google\protobuf\compiler\java\java_generator_factory.cc ..\src\google\protobuf\compiler\java\java_helpers.cc ..\src\google\protobuf\compiler\java\java_lazy_message_field.cc ..\src\google\protobuf\compiler\java\java_map_field.cc ..\src\google\protobuf\compiler\java\java_message.cc ..\src\google\protobuf\compiler\java\java_message_field.cc ..\src\google\protobuf\compiler\java\java_name_resolver.cc ..\src\google\protobuf\compiler\java\java_primitive_field.cc ..\src\google\protobuf\compiler\java\java_service.cc ..\src\google\protobuf\compiler\java\java_shared_code_generator.cc ..\src\google\protobuf\compiler\java\java_string_field.cc ..\src\google\protobuf\compiler\plugin.cc ..\src\google\protobuf\compiler\plugin.pb.cc ..\src\google\protobuf\compiler\python\python_generator.cc ..\src\google\protobuf\compiler\ruby\ruby_generator.cc ..\src\google\protobuf\compiler\subprocess.cc ..\src\google\protobuf\compiler\zip_writer.cc
+         zip_writer.cc
+         subprocess.cc
+         ruby_generator.cc
+         python_generator.cc
+         plugin.pb.cc
+         plugin.cc
+         java_string_field.cc
+         java_shared_code_generator.cc
+         java_service.cc
+         java_primitive_field.cc
+         java_name_resolver.cc
+         java_message_field.cc
+         java_message.cc
+         java_map_field.cc
+         java_lazy_message_field.cc
+         java_helpers.cc
+         java_generator_factory.cc
+         java_generator.cc
+         java_file.cc
+         java_field.cc
+         Generating Code...
+         Compiling...
+         java_extension.cc
+         java_enum_field.cc
+         java_enum.cc
+         java_doc_comment.cc
+         java_context.cc
+         javanano_primitive_field.cc
+         javanano_message_field.cc
+         javanano_message.cc
+         javanano_map_field.cc
+         javanano_helpers.cc
+         javanano_generator.cc
+         javanano_file.cc
+         javanano_field.cc
+     1>Done Building Project "C:\Users\labadmin\Downloads\protobuf-3.0.0-alpha-2\vsprojects\libprotoc.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:28.91

@@ -1,0 +1,159 @@
+﻿Build started 5/26/2015 5:19:15 PM.
+     1>Project "C:\Users\labadmin\Downloads\protobuf-3.0.0-alpha-2\vsprojects\test_plugin.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../src /I. /I../gtest/include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VARIADIC_MAX=10 /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\test_plugin\\" /Fd"Debug\test_plugin\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt /wd4244 /wd4267 /wd4018 /wd4355 /wd4800 /wd4251 /wd4996 /wd4146 /wd4305 ..\src\google\protobuf\compiler\mock_code_generator.cc ..\src\google\protobuf\compiler\test_plugin.cc ..\src\google\protobuf\testing\file.cc
+         file.cc
+         test_plugin.cc
+         mock_code_generator.cc
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Debug\test_plugin.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"Debug\test_plugin.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug\test_plugin.lib" /MACHINE:X86 /SAFESEH Debug\test_plugin\mock_code_generator.obj
+         Debug\test_plugin\test_plugin.obj
+         Debug\test_plugin\file.obj
+         "C:\Users\labadmin\Downloads\protobuf-3.0.0-alpha-2\gtest\msvc\protobuf\Debug\gtestd.lib"
+         "C:\Users\labadmin\Downloads\protobuf-3.0.0-alpha-2\vsprojects\Debug\libprotobuf.lib"
+         "C:\Users\labadmin\Downloads\protobuf-3.0.0-alpha-2\vsprojects\Debug\libprotoc.lib"
+     1>mock_code_generator.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+     1>libprotobuf.lib(common.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(descriptor.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(descriptor.pb.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(printer.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(strutil.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(substitute.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(once.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(descriptor_database.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(arena.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(generated_message_util.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(unknown_field_set.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(message_lite.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(repeated_field.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(dynamic_message.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(text_format.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(coded_stream.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(wire_format.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(strtod.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(tokenizer.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(zero_copy_stream_impl_lite.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(stringprintf.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(arenastring.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(message.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(extension_set.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(extension_set_heavy.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(wire_format_lite.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(generated_message_reflection.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(reflection_ops.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(atomicops_internals_x86_msvc.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(map_field.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(structurally_valid.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(zero_copy_stream.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libprotobuf.lib(zero_copy_stream_impl.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>msvcprtd.lib(MSVCP120D.dll) : error LNK2005: "public: __thiscall std::_Container_base12::_Container_base12(void)" (??0_Container_base12@std@@QAE@XZ) already defined in libprotobuf.lib(common.obj)
+     1>msvcprtd.lib(MSVCP120D.dll) : error LNK2005: "public: __thiscall std::_Container_base12::~_Container_base12(void)" (??1_Container_base12@std@@QAE@XZ) already defined in libprotobuf.lib(common.obj)
+     1>msvcprtd.lib(MSVCP120D.dll) : error LNK2005: "public: struct std::_Iterator_base12 * * __thiscall std::_Container_base12::_Getpfirst(void)const " (?_Getpfirst@_Container_base12@std@@QBEPAPAU_Iterator_base12@2@XZ) already defined in libprotobuf.lib(common.obj)
+     1>msvcprtd.lib(MSVCP120D.dll) : error LNK2005: "public: void __thiscall std::_Container_base12::_Orphan_all(void)" (?_Orphan_all@_Container_base12@std@@QAEXXZ) already defined in libprotobuf.lib(common.obj)
+     1>msvcprtd.lib(MSVCP120D.dll) : error LNK2005: "public: void __thiscall std::_Container_base12::_Swap_all(struct std::_Container_base12 &)" (?_Swap_all@_Container_base12@std@@QAEXAAU12@@Z) already defined in libprotobuf.lib(descriptor.obj)
+     1>msvcprtd.lib(MSVCP120D.dll) : error LNK2005: "public: __thiscall std::locale::id::id(unsigned int)" (??0id@locale@std@@QAE@I@Z) already defined in libprotobuf.lib(common.obj)
+     1>msvcprtd.lib(MSVCP120D.dll) : error LNK2005: "public: bool __thiscall std::ios_base::good(void)const " (?good@ios_base@std@@QBE_NXZ) already defined in libprotobuf.lib(message.obj)
+     1>msvcprtd.lib(MSVCP120D.dll) : error LNK2005: "public: int __thiscall std::ios_base::flags(void)const " (?flags@ios_base@std@@QBEHXZ) already defined in libprotobuf.lib(zero_copy_stream_impl.obj)
+     1>msvcprtd.lib(MSVCP120D.dll) : error LNK2005: "public: __int64 __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::sputn(char const *,__int64)" (?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAE_JPBD_J@Z) already defined in libprotobuf.lib(zero_copy_stream_impl.obj)
+     1>msvcprtd.lib(MSVCP120D.dll) : error LNK2005: "protected: char * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::gptr(void)const " (?gptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ) already defined in libprotobuf.lib(zero_copy_stream_impl.obj)
+     1>msvcprtd.lib(MSVCP120D.dll) : error LNK2005: "public: void __thiscall std::basic_ios<char,struct std::char_traits<char> >::setstate(int,bool)" (?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z) already defined in libprotobuf.lib(zero_copy_stream_impl.obj)
+     1>msvcprtd.lib(MSVCP120D.dll) : error LNK2005: "public: class std::basic_ostream<char,struct std::char_traits<char> > * __thiscall std::basic_ios<char,struct std::char_traits<char> >::tie(void)const " (?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ) already defined in libprotobuf.lib(zero_copy_stream_impl.obj)
+     1>msvcprtd.lib(MSVCP120D.dll) : error LNK2005: "public: class std::basic_streambuf<char,struct std::char_traits<char> > * __thiscall std::basic_ios<char,struct std::char_traits<char> >::rdbuf(void)const " (?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ) already defined in libprotobuf.lib(zero_copy_stream_impl.obj)
+     1>msvcprtd.lib(MSVCP120D.dll) : error LNK2005: "public: void __thiscall std::basic_ostream<char,struct std::char_traits<char> >::_Osfx(void)" (?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ) already defined in libprotobuf.lib(zero_copy_stream_impl.obj)
+     1>msvcprtd.lib(MSVCP120D.dll) : error LNK2005: "public: class std::basic_ostream<char,struct std::char_traits<char> > & __thiscall std::basic_ostream<char,struct std::char_traits<char> >::flush(void)" (?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ) already defined in libprotobuf.lib(zero_copy_stream_impl.obj)
+     1>msvcprtd.lib(MSVCP120D.dll) : error LNK2005: "public: class std::basic_ostream<char,struct std::char_traits<char> > & __thiscall std::basic_ostream<char,struct std::char_traits<char> >::write(char const *,__int64)" (?write@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@PBD_J@Z) already defined in libprotobuf.lib(zero_copy_stream_impl.obj)
+     1>libcpmtd.lib(locale0.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libcpmtd.lib(locale0.obj) : error LNK2005: "void __cdecl std::_Facet_Register(class std::_Facet_base *)" (?_Facet_Register@std@@YAXPAV_Facet_base@1@@Z) already defined in msvcprtd.lib(locale0_implib.obj)
+     1>libcpmtd.lib(locale0.obj) : error LNK2005: "private: static class std::locale::_Locimp * __cdecl std::locale::_Getgloballocale(void)" (?_Getgloballocale@locale@std@@CAPAV_Locimp@12@XZ) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>libcpmtd.lib(locale0.obj) : error LNK2005: "public: static void __cdecl std::_Locinfo::_Locinfo_ctor(class std::_Locinfo *,char const *)" (?_Locinfo_ctor@_Locinfo@std@@SAXPAV12@PBD@Z) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>libcpmtd.lib(locale0.obj) : error LNK2005: "public: static void __cdecl std::_Locinfo::_Locinfo_dtor(class std::_Locinfo *)" (?_Locinfo_dtor@_Locinfo@std@@SAXPAV12@@Z) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>libcpmtd.lib(iosptrs.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libcpmtd.lib(locale.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libcpmtd.lib(locale.obj) : error LNK2005: "protected: char * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::_Pninc(void)" (?_Pninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEPADXZ) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>libcpmtd.lib(locale.obj) : error LNK2005: "public: int __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::sputc(char)" (?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHD@Z) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>libcpmtd.lib(locale.obj) : error LNK2005: "public: __int64 __thiscall std::ios_base::width(__int64)" (?width@ios_base@std@@QAE_J_J@Z) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>libcpmtd.lib(locale.obj) : error LNK2005: "public: __int64 __thiscall std::ios_base::width(void)const " (?width@ios_base@std@@QBE_JXZ) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>libcpmtd.lib(xlock.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libcpmtd.lib(xlock.obj) : error LNK2005: "public: __thiscall std::_Lockit::_Lockit(int)" (??0_Lockit@std@@QAE@H@Z) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>libcpmtd.lib(xlock.obj) : error LNK2005: "public: __thiscall std::_Lockit::~_Lockit(void)" (??1_Lockit@std@@QAE@XZ) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>libcpmtd.lib(xthrow.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libcpmtd.lib(xthrow.obj) : error LNK2005: "void __cdecl std::_Xbad_alloc(void)" (?_Xbad_alloc@std@@YAXXZ) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>libcpmtd.lib(xthrow.obj) : error LNK2005: "void __cdecl std::_Xlength_error(char const *)" (?_Xlength_error@std@@YAXPBD@Z) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>libcpmtd.lib(xthrow.obj) : error LNK2005: "void __cdecl std::_Xout_of_range(char const *)" (?_Xout_of_range@std@@YAXPBD@Z) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>libcpmtd.lib(xdebug.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libcpmtd.lib(xdebug.obj) : error LNK2005: "void * __cdecl operator new(unsigned int,struct std::_DebugHeapTag_t const &,char *,int)" (??2@YAPAXIABU_DebugHeapTag_t@std@@PADH@Z) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>libcpmtd.lib(xdebug.obj) : error LNK2005: "void __cdecl operator delete(void *,struct std::_DebugHeapTag_t const &,char *,int)" (??3@YAXPAXABU_DebugHeapTag_t@std@@PADH@Z) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>libcpmtd.lib(xdebug.obj) : error LNK2005: "struct std::_DebugHeapTag_t const & __cdecl std::_DebugHeapTag_func(void)" (?_DebugHeapTag_func@std@@YAABU_DebugHeapTag_t@1@XZ) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>libcpmtd.lib(wlocale.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libcpmtd.lib(wlocale.obj) : error LNK2005: "public: __int64 __thiscall std::ios_base::width(__int64)" (?width@ios_base@std@@QAE_J_J@Z) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>libcpmtd.lib(wlocale.obj) : error LNK2005: "public: __int64 __thiscall std::ios_base::width(void)const " (?width@ios_base@std@@QBE_JXZ) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>libcpmtd.lib(xlocale.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>libcpmtd.lib(xlocale.obj) : error LNK2005: "protected: char * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::_Pninc(void)" (?_Pninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEPADXZ) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>libcpmtd.lib(xlocale.obj) : error LNK2005: "public: int __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::sputc(char)" (?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHD@Z) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>libcpmtd.lib(xlocale.obj) : error LNK2005: "public: __int64 __thiscall std::ios_base::width(__int64)" (?width@ios_base@std@@QAE_J_J@Z) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>libcpmtd.lib(xlocale.obj) : error LNK2005: "public: __int64 __thiscall std::ios_base::width(void)const " (?width@ios_base@std@@QBE_JXZ) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>libcpmtd.lib(xdateord.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MTd_StaticDebug' doesn't match value 'MDd_DynamicDebug' in mock_code_generator.obj
+     1>LIBCMTD.lib(dbgheap.obj) : error LNK2005: __CrtSetCheckCount already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(dbgheap.obj) : error LNK2005: __calloc_dbg already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(dbgheap.obj) : error LNK2005: __free_dbg already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(sprintf.obj) : error LNK2005: __snprintf_s already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(sprintf.obj) : error LNK2005: _sprintf already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(stdexcpt.obj) : error LNK2005: "public: __thiscall std::bad_cast::bad_cast(class std::bad_cast const &)" (??0bad_cast@std@@QAE@ABV01@@Z) already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(stdexcpt.obj) : error LNK2005: "public: __thiscall std::bad_cast::bad_cast(char const *)" (??0bad_cast@std@@QAE@PBD@Z) already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(stdexcpt.obj) : error LNK2005: "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z) already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(stdexcpt.obj) : error LNK2005: "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z) already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(stdexcpt.obj) : error LNK2005: "public: __thiscall std::exception::exception(void)" (??0exception@std@@QAE@XZ) already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(stdexcpt.obj) : error LNK2005: "public: virtual __thiscall std::bad_cast::~bad_cast(void)" (??1bad_cast@std@@UAE@XZ) already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(stdexcpt.obj) : error LNK2005: "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ) already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(stdexcpt.obj) : error LNK2005: "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ) already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(winapisupp.obj) : error LNK2005: ___crtSetUnhandledExceptionFilter already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(winapisupp.obj) : error LNK2005: ___crtTerminateProcess already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(winapisupp.obj) : error LNK2005: ___crtUnhandledException already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(_ctype.obj) : error LNK2005: _isdigit already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(_ctype.obj) : error LNK2005: _isspace already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(_ctype.obj) : error LNK2005: _isxdigit already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(osfinfo.obj) : error LNK2005: __open_osfhandle already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(dosmap.obj) : error LNK2005: __errno already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(dbghook.obj) : error LNK2005: __crt_debugger_hook already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(wsetloca.obj) : error LNK2005: __configthreadlocale already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(fpexcept.obj) : error LNK2005: __except1 already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(fpinit.obj) : error LNK2005: __fltused already defined in a previous module
+     1>LIBCMTD.lib(fpinit.obj) : error LNK2005: __ldused already defined in a previous module
+     1>LIBCMTD.lib(mlock.obj) : error LNK2005: __lock already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(mlock.obj) : error LNK2005: __unlock already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(_file.obj) : error LNK2005: ___iob_func already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(crt0dat.obj) : error LNK2005: __amsg_exit already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(crt0dat.obj) : error LNK2005: __cexit already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(crt0dat.obj) : error LNK2005: __exit already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(crt0dat.obj) : error LNK2005: __initterm_e already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(crt0dat.obj) : error LNK2005: _exit already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(winxfltr.obj) : error LNK2005: __XcptFilter already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(printf.obj) : error LNK2005: _printf already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(getenv.obj) : error LNK2005: _getenv already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(fflush.obj) : error LNK2005: _fflush already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(hooks.obj) : error LNK2005: "void __cdecl terminate(void)" (?terminate@@YAXXZ) already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(invarg.obj) : error LNK2005: __invalid_parameter already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(invarg.obj) : error LNK2005: __invoke_watson already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(crt0init.obj) : error LNK2005: ___xi_a already defined in MSVCRTD.lib(cinitexe.obj)
+     1>LIBCMTD.lib(crt0init.obj) : error LNK2005: ___xi_z already defined in MSVCRTD.lib(cinitexe.obj)
+     1>LIBCMTD.lib(crt0init.obj) : error LNK2005: ___xc_a already defined in MSVCRTD.lib(cinitexe.obj)
+     1>LIBCMTD.lib(crt0init.obj) : error LNK2005: ___xc_z already defined in MSVCRTD.lib(cinitexe.obj)
+     1>LIBCMTD.lib(dbgrptw.obj) : error LNK2005: __CrtDbgReportW already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(vprintf.obj) : error LNK2005: _vprintf already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(strtoq.obj) : error LNK2005: __strtoi64 already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(strtoq.obj) : error LNK2005: __strtoui64 already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(strtol.obj) : error LNK2005: _strtol already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(strtol.obj) : error LNK2005: _strtoul already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>LIBCMTD.lib(strtod.obj) : error LNK2005: _strtod already defined in MSVCRTD.lib(MSVCR120D.dll)
+     1>MSVCRTD.lib(MSVCR120D.dll) : error LNK2005: __close already defined in LIBCMTD.lib(close.obj)
+     1>MSVCRTD.lib(MSVCR120D.dll) : error LNK2005: __read already defined in LIBCMTD.lib(read.obj)
+     1>MSVCRTD.lib(MSVCR120D.dll) : error LNK2005: __write already defined in LIBCMTD.lib(write.obj)
+     1>LINK : warning LNK4098: defaultlib 'MSVCRTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+     1>LINK : warning LNK4098: defaultlib 'LIBCMTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+     1>Debug\test_plugin.exe : fatal error LNK1169: one or more multiply defined symbols found
+     1>Done Building Project "C:\Users\labadmin\Downloads\protobuf-3.0.0-alpha-2\vsprojects\test_plugin.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.07
