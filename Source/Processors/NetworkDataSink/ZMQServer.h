@@ -20,6 +20,7 @@
 #include "dataPacket.pb.h"
 #include <list>
 #include <queue>
+#include <boost/circular_buffer.hpp>
 
 /**
 
