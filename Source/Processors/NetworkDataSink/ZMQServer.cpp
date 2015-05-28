@@ -22,7 +22,6 @@ ZMQServer::ZMQServer()
 	responder = nullptr;
 	urlport = ZMQSERVER_DEFAULT_PORT;
 	threadRunning = false;
-    initDataBuffer();
 	//openSocket();
 
 	sendSampleCount = true; 
@@ -181,7 +180,7 @@ String ZMQServer::handleSpecialMessages(StringTS msg)
 
 void ZMQServer::openSocket()
 {
-    startThread();
+	startThread();
 }
 
 void ZMQServer::run()
@@ -247,13 +246,4 @@ void ZMQServer::createZmqContext()
 	if (zmqContext == nullptr)
 		zmqContext = zmq_ctx_new(); //<-- this is only available in version 3+
 #endif
-}
-
-void ZMQServer::initDataBuffer()
-{
-    boost::circular_buffer<float> dataBuffer(500);
-    dataBuffer.push_back(5.);
-    dataBuffer.push_back(4.);
-    return;
-    
 }
