@@ -14,6 +14,7 @@
 #define ZMQSERVER_DEFAULT_PORT 5554
 #define ZMQSERVER_DEFAULT_TYPE 0
 #define ZMQSERVER_MAX_MESSAGE_LENGTH 64000
+#define ZMQSERVER_DATA_BUFFER_SIZE 1310720
 
 
 #include "../../JuceLibraryCode/JuceHeader.h"
@@ -60,13 +61,24 @@ public:
 	circularBuffer();
 	~circularBuffer();
 
-	void appendData();
-	void getData(int fromSample);
+	void appendData(float);
+	void appendArray(float *, int );
 
+	void clear();
+
+	float getData();
+	float popData();
+	float* getArray(int fromSample);
+
+
+	CriticalSection* getMutex()
+	{
+		return &bufferMutex;
+	}
 private:
 
-	juce::int64 readPointer;
-	juce::int64 writePointer;
+	CriticalSection bufferMutex;
+	boost::circular_buffer<float> data;
 
 };
 
@@ -122,6 +134,7 @@ private:
 	StringTS createStringTS(String S, int64 t);
 
 	static void* zmqContext;
+
 	void* responder;
 
 	bool state;
@@ -130,13 +143,11 @@ private:
 	bool sendSampleCount;
 	ServerType type;
 
+	circularBuffer dataBuffer;
+
 	std::queue<StringTS> networkMessagesQueue;
-	CriticalSection lock;
+	
 	bool firstTime;
-
-	//circularBuffer dataBuffer;
-	//circularBuffer eventsBuffer;
-
 };
 
 

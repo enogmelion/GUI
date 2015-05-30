@@ -10,7 +10,64 @@
 
 #include "ZMQServer.h"
 #include "../NetworkEvents/NetworkEvents.h"
+
 using namespace std;
+
+circularBuffer::circularBuffer()
+{
+	//create the buffert and assert
+	data.set_capacity(ZMQSERVER_DATA_BUFFER_SIZE);
+	assert(data.capacity() == ZMQSERVER_DATA_BUFFER_SIZE);
+	assert(data.size() == 0);
+	assert(data.empty());
+}
+
+circularBuffer::~circularBuffer()
+{
+	ScopedLock bufferLock(bufferMutex);
+	data.clear();
+	data.~circular_buffer();
+}
+
+void circularBuffer::clear()
+{
+	ScopedLock bufferLock(bufferMutex);
+	data.clear();
+}
+
+
+void circularBuffer::appendData(float newData)
+{
+	ScopedLock bufferLock(bufferMutex);
+	data.push_back(newData);
+}
+
+void circularBuffer::appendArray(float *newData, int len)
+{
+	ScopedLock bufferLock(bufferMutex);
+	//Check that the array wont fill the buffer
+	//assert(data.capacity() > (data.size + len));
+	//
+	for (int i = 0; i < len; i++)
+	{
+		data.push_back(newData[i]);
+	}
+}
+
+float circularBuffer::getData()
+{
+	ScopedLock bufferLock(bufferMutex);
+	return data.back();
+}
+
+float circularBuffer::popData()
+{
+	ScopedLock bufferLock(bufferMutex);
+	return data.front();
+}
+
+
+/////////////////////////////////////////////////////////
 void* ZMQServer::zmqContext = nullptr;
 
 ZMQServer::ZMQServer()
@@ -24,9 +81,12 @@ ZMQServer::ZMQServer()
 	threadRunning = false;
 	//openSocket();
 
+	circularBuffer dataBuffer;
+
 	sendSampleCount = true; 
 
 	shutdown = false;
+
 
 }
 
@@ -187,6 +247,21 @@ void ZMQServer::run()
 {
 #ifdef ZEROMQ
 
+	//fill the buffer with something
+	float dataArray[10];
+	float gotArray[20];
+
+	for (int i = 0; i < 10; i++)
+	{
+		dataBuffer.appendData(i*1.);
+		dataArray[i] = i * 0.5;
+	}
+	dataBuffer.appendArray(dataArray, 10);
+	//get the numbers in the buffer
+	for (int i = 0; i < 20; i++)
+	{
+		gotArray[i] = dataBuffer.getData();
+	}
 	//zmqContext = zmq_ctx_new();
 	responder = zmq_socket(zmqContext, ZMQ_REP);
 	tutorial::AddressBook address_book;
